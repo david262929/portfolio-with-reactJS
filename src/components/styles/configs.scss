@@ -1,0 +1,115 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+/* ======= Base ======= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', arial, sans-serif;
+  color: #434343;
+  background: #DAE3E7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #778492;
+}
+
+input,
+select,
+textarea,
+button {
+  &:focus{
+    outline: none;
+  }
+}
+
+a {
+  border-radius: 0;
+  color: #3AAA64;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+    color: #5f6b77;
+    color: #2d844e;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &.btn:focus {
+    color: #fff;
+  }
+
+  &.dotted-link {
+    border-bottom: 1px dotted #778492;
+    color: #778492;
+
+    &:hover {
+      text-decoration: none;
+      color: #49515a;
+    }
+  }
+}
+
+.btn-cta-primary {
+  background: #54ba4e;
+  border: 1px solid #54ba4e;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  &:hover {
+    background: #49ac43;
+    border: 1px solid #49ac43;
+    color: #fff;
+  }
+}
+
+.btn-cta-secondary {
+  background: #479FC8;
+  border: 1px solid #479FC8;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  &:hover{
+    background: #3893bd;
+    border: 1px solid #3893bd;
+    color: #fff;
+  }
+}
+
+.btn, a.btn {
+  transition: all 0.4s ease-in-out;
+  font-family: 'Montserrat', arial, sans-serif;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.btn .fa, a.btn .fa {
+  margin-right: 5px;
+}
+
+.btn:focus {
+  color: #fff;
+}
+
+.text-highlight {
+  color: #32383e;
+}
+
+.label-theme {
+  background: #3AAA64;
+  font-size: 12px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1360px;
+  }
+}

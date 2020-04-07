@@ -1,0 +1,111 @@
+/* ======= Contact ======= */
+.contact-me-class{
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+  z-index: 999;
+  background-color: white;
+  width: 40vw;
+  max-width: 500px;
+  font-weight: 900;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  &.show{
+    display: block;
+  }
+  .done {
+    overflow: hidden;
+    height: auto;
+    width: calc(100% - 5px);
+    display:none;
+    &.show{
+      //animation: show-message 2s ease;
+      //@keyframes show-message {
+      //  0%, 99%{
+      //    display: block;
+      //  }
+      //  100%{
+      //    display: none;
+      //  }
+      //}
+      display: block;
+    }
+    .alert-danger, .alert-success{
+      color: #FF4500;
+      padding: 0;
+      margin-bottom: 0;
+      clear: both;
+      border: 0px;
+      background-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 15px;
+    }
+    .alert-success{
+      color: #54ba4e;
+    }
+
+  }
+  .close-it{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    &:hover {cursor: pointer;}
+  }
+  .contact-form {
+    input, textarea {
+      clear: both;
+      border: 0px;
+      border-bottom: 2px solid #333;
+      width: 100%;
+      background-color: transparent;
+      padding: 20px 0px;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      &.error{
+        background-color:#ffffff;
+        border-bottom:2px solid #FF4500!important;
+        transition:border linear 0.2s,box-shadow linear 0.2s;
+      }
+      &[type='email']{
+        text-transform: normal;
+      }
+      &::placeholder{
+        text-transform: uppercase;
+      }
+    }
+    input#submit {
+      width:auto;
+      border:2px solid;
+      padding:10px 20px;
+      display:inline-block;
+      border:2px solid #009688;
+      color: #009688;
+      &:hover {
+        background-color:#009688;
+        color:#fff;
+        border:2px solid white;
+      }
+      &:focus, &:active{
+        border-top:0px;
+        border-bottom:2px solid  #009688;
+        outline:0;
+        outline: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    width: 60vw;
+  }
+  @media only screen and (max-width: 720px) {
+    width:80vw;
+  }
+
+  @media only screen and (max-width: 550px) {
+    width:100vw;
+  }
+}
